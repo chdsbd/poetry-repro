@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-repro"
+version = "0.1.0"
+description = ""
+authors = ["Christopher Dignam <chris@dignam.xyz>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+cli = 'poetry_repro:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
